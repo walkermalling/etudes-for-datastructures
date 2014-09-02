@@ -133,4 +133,11 @@ describe('List',function(){
     expect(list.currPos()).to.eql(1);
   });
 
+  it('can contain non numeric values',function(){
+    list.append("Alpha");
+    list.append("Beta");
+    list.append("Gamma");
+    expect(list.toString()).to.eql(['Alpha','Beta','Gamma']);
+  });
+
 });
