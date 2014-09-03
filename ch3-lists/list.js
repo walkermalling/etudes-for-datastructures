@@ -60,7 +60,7 @@ List.prototype.previous = function(){
 };
 
 List.prototype.next = function(){
-  return this.dataStore[++this.pos];
+  return this.dataStore[this.pos++];
 };
 
 List.prototype.hasPrevious = function(){
@@ -69,7 +69,7 @@ List.prototype.hasPrevious = function(){
 };
 
 List.prototype.hasNext = function(){
-  if( this.pos < this.listSize -1 ) return true;
+  if( this.pos <= this.listSize -1 ) return true;
   else return false;
 };
 

@@ -52,7 +52,7 @@ describe('List',function(){
   });
 
   it('can return a string representation of the list',function(){
-    // expect(list.toString()).to.be.eql([]);
+    expect(list.toString()).to.be.eql([]);
   });
 
   it('can insert an item',function(){
