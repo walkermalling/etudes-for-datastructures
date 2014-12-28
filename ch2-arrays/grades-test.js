@@ -1,7 +1,8 @@
  'use strict';
  /*jshint node:true*/
 var expect = require('chai').expect;
-var Grades = require('./grades');
+var rootPath = require('app-root-path');
+var Grades = require(rootPath + '/ch2-arrays/grades');
 
 describe('Grades',function(){
 
